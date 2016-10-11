@@ -206,6 +206,18 @@ PORTFOLIO SECTION
     border-radius: 5px;
 }
 
+@media screen and (max-width: 880px) {
+    .project-div li{
+      width:auto;
+      height: auto;
+      text-align: center;
+    }
+
+    .project-div li img{
+      max-height: 400px;
+    }
+}
+
 .project-div li:hover {
     box-shadow: 1px 2px 25px rgba(160, 160, 160, 0.4);
     -webkit-transition: .7s ease-out;
@@ -217,7 +229,7 @@ PORTFOLIO SECTION
 .project-div li img {
     width: 100%;
     border-radius: 5px;
-    max-height:170px;
+    /*max-height:170px;*/
 }
 
 .project-div img:hover {
