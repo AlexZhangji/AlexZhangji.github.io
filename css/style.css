@@ -217,6 +217,7 @@ PORTFOLIO SECTION
 .project-div li img {
     width: 100%;
     border-radius: 5px;
+    max-height:170px;
 }
 
 .project-div img:hover {
