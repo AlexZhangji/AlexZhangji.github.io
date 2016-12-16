@@ -26,6 +26,7 @@ h2 {
 
 h3 {
     font-size: 28px;
+    /*font-weight: bold;*/
 }
 
 h4 {
@@ -198,7 +199,7 @@ PORTFOLIO SECTION
 }
 
 .project-div li {
-    width: 31%;
+    width: 47.5%;
     float: left;
     padding: 15px;
     margin: 10px;
@@ -215,6 +216,7 @@ PORTFOLIO SECTION
 
     .project-div li img{
       max-height: 400px;
+      min-height: 400px;
     }
 }
 
@@ -230,6 +232,7 @@ PORTFOLIO SECTION
     width: 100%;
     border-radius: 5px;
     /*max-height:170px;*/
+
 }
 
 .project-div img:hover {
@@ -243,7 +246,7 @@ PORTFOLIO SECTION
 
 .project-div h3 {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: normal;
@@ -251,7 +254,18 @@ PORTFOLIO SECTION
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: bold;
 }
+
+.project-div span .tech{
+  text-align: center;
+  font-size: 12px;
+
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 .project-div h3 a {
     color: #363942;
