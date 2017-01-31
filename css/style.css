@@ -207,7 +207,7 @@ PORTFOLIO SECTION
     border-radius: 5px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1000px) {
     .project-div li{
       width:auto;
       height: auto;
@@ -215,8 +215,8 @@ PORTFOLIO SECTION
     }
 
     .project-div li img{
-      max-height: 400px;
-      min-height: 400px;
+      /*max-height: 400px;
+      min-height: 400px;*/
     }
 }
 
