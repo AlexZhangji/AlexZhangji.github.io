@@ -1,0 +1,88 @@
+.music_card {
+  /*card attribute*/
+  margin: 10px;
+  position: absolute;
+  /*background-size: 100%;*/
+  width: 185px;
+  height: 185px;
+  background-size: 100%;
+  background: #fff;
+  /*end of card attribute*/
+  background-size: cover;
+  border-radius: 185px;
+  -webkit-border-radius: 185px;
+  -moz-border-radius: 185px;
+  border: 3px solid #FFF;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+  background-image: url(../img/b.jpg);
+  /*background: url(./img/disc_base.svg) no-repeat center;*/
+  -webkit-mask: url(../img/disc_mask.svg) no-repeat center;
+  /*rotating*/
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+#voice_gif {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  right: 20px;
+}
+#wild_img {
+  /*width: 100%;*/
+  max-width: 400px;
+  position: fixed;
+  z-index: 1000;
+  top: -400px;
+  right: -400px;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  -webkit-box-shadow: 2px 1px 6px 1px #555;
+  box-shadow: 2px 1px 6px 1px #555;
+  /*rotate*/
+
+}
+.hidden {
+  visibility: hidden;
+}
+
+.rotate_15{
+  -webkit-animation: rotation 15s infinite linear;
+}
+
+#helper{
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+  top: 200px;
+  right: -70px;
+  float: right;
+  margin-top: 300px;
+  margin-right: 30px;
+  /*transform: skewX(-10deg);*/
+
+}
+
+#cat_img {
+  /*width: 100%;*/
+  max-width: 400px;
+  position: fixed;
+  z-index: 1000;
+  bottom: -500px;
+  right: 10px;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  -webkit-box-shadow: 2px 1px 6px 1px #555;
+  box-shadow: 2px 1px 6px 1px #555;
+}

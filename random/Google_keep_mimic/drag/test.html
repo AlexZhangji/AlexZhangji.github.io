@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/test.css">
+  <link rel="stylesheet" href="./css/helper.css">
+
+  <!-- fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+  <title></title>
+</head>
+
+<body>
+  <div id="container">
+    <div class="bar" id="bar"></div>
+    <input id="search_img" />
+    <div class="steady btn" id="btn1">Add Image</div>
+    <div class="steady btn" id="btn2">Show Album</div>
+    <div class="steady btn" id="btn3"></div>
+    <div class="steady btn" id="btn4"></div>
+    <div class="steady btn" id="btn5">Restore</div>
+    <div id="inner">
+
+      <div class="gravity card_pane"></div>
+      <div class="gravity card_pane"></div>
+      <div class="gravity card_pane"></div>
+      <div class="gravity card_pane"></div>
+      <div class="gravity card_pane"></div>
+    </div>
+
+
+    <!-- <img src="./img/cat.jpg" id="wild_img" class="hidden"> -->
+    <div class="music_card" id="wild_img" class="hidden"></div>
+  </div>
+
+
+
+  <script src="http://code.jquery.com/jquery-1.12.0.js"></script>
+  <script src="./js/annyang.js"></script>
+  <script src="./js/test.js"></script>
+  <script src="./js/jGravity.js"></script>
+  <script src="./js/jquery-ui.js"></script>
+  <script src="./js/isotope.pkgd.min.js"></script>
+
+  <!-- Mine -->
+  <script src="./key-press.js"></script>
+  <script src="./helper.js"></script>
+  <script src="./image-search.js"></script>
+
+  <!-- voice input -->
+  <script>
+    if (annyang) {
+      // Let's define a command.
+      var commands = {
+        'hello': function() {
+          alert('Hello world!');
+        },
+        'show me *tag': showImages,
+        'falling down': fall,
+        'restore': restore,
+        'Avada Kedavra': nono,
+        'test': function() {
+          alert('Test!');
+        },
+      };
+
+      // Add our commands to annyang
+      annyang.addCommands(commands);
+
+      // Start listening.
+      annyang.start();
+    }
+</script>
+</body>
+
+</html>
