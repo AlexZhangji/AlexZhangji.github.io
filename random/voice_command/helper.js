@@ -67,9 +67,10 @@ function search_img(term, type) {
   };
 
   $.ajax({
-      url: "https://bingapis.azure-api.net/api/v5/images/search?" + $.param(params),
+      url: "https://api.cognitive.microsoft.com/bing/v5.0/images/search?" + $.param(params),
       beforeSend: function(xhrObj) {
         // Request headers
+        xhrObj.setRequestHeader("Content-Type","multipart/form-data");
         xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "4abb72b2eea943fa8de128c9ee46d07d");
       },
       type: "GET",
